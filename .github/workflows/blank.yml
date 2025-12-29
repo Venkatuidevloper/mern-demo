@@ -5,8 +5,9 @@ on:
       - main
       - develop
   pull_request:
+    types: [opened, synchronize, reopened]
     branches:
-      -main
+      - main
 jobs:
   build: 
     runs-on: ubuntu-latest
